@@ -33,14 +33,10 @@ a {
 }
 
 .link {
-   
     text-decoration: none;
-    padding: 1rem;
     color: var(--white-color);
 }
-.link .link-active {
-    font-weight: bold;
-}
+
 
 .nav-link {
     display: inline;
@@ -78,7 +74,6 @@ a {
     margin-top: 100px;
 }
 .myInfo-block {
-    
     text-align: left;
     padding: 100px;
 }
@@ -213,9 +208,8 @@ footer {
 }
 
 .social-img {
-    height: 48px;
     width: 48px;
-    padding: 10px 60px;
+    margin: 10px 60px;
 }
 
 
@@ -228,6 +222,7 @@ footer a {
 .project-parent {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-list {
@@ -248,22 +243,14 @@ footer a {
     border-radius: 30px;
     font-size: 15px;
     font-weight: bold;
+    display: block; 
+    padding: 5%;
+    margin-top: 20px; 
+    margin-left: 5px;
 }
 
 .myprojects-btn:hover {
     background-color: var(--body-color);
-}
-
-.btn-dialogue {
-    margin-top: 6px;
-    padding: 5%;
-    margin-left: 5px;
-}
-
-.btn-know {
-    padding: 5%;
-    margin-top: 60px; 
-    margin-left: 5px;
 }
 
 .project-box  a{
@@ -283,169 +270,78 @@ footer a {
 
 .blogs-btn:hover {
     background-color: var(--body-color);
-}
+} 
 
 
 /* responsive */
- @media only screen and (max-width: 370px) {
-    body {
-        font-size: 15px;
-        margin: auto;
-        text-align:center;
-    }
-
-    /* navigation */
-
-    nav {
-        margin: auto;
-        padding: 10px;
-       
-    }
-
-    .nav-link {
-        display: block;
-        margin: 10px;
-    }
-
-    .nav-icons {
-        text-align:center;
-        margin-top: 30px;
-        margin-right: 40px; 
-    }
-
-    .main-heading {
-        text-align:center;
-        margin-left: auto;
-        font-size: 30px;
-    }
-
-    /* header */
-
-    .header-block {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-
-    .profile-image {
-        float: none;
-        padding: 10px;
-        height: 12rem;
-    }
-
-    .myInfo-block {
-        padding: 20px;
-    }
-
-    /* all blocks */
+@media (max-width: 1175px) {
 
     .parent {
-        flex-direction: column;
+        text-align: center;
         margin: auto;
     }
 
     .blocks {
-        margin-right: 10px;
-        height: 20%;
-        width: 65%;
-        text-align: left;
+        margin: 50px auto;
     }
 
-    .techno {
-        margin-bottom: 50px;
-    }
-
-
-    .project  {
-        margin-bottom: 50px;
-    }
-
-    .blogs {
-        margin-bottom: 50px;
-    }
-
-    /* footer */
-
-    footer {
+}
+@media(max-width: 500px) {
+    .main-heading {
+        text-align: center;
         margin: auto;
-        padding: 30px;
-        text-align: left;
+        font-size: 30px;
+    }
+    .nav-icons {
+        text-align: center;
+    }
+    .nav-link {
+        display: block;
+        margin: 15px auto;
     }
 
     .social-img {
-        height: 32px;
         width: 32px;
-        padding: 10px; 
+        margin: 20px;
     }
-
-    /* project.html */
-    .nav2 {
-        text-align: center;
-    }
-
-
-    .project-parent {
-        flex-direction: column;
+    footer {
         margin: auto;
-
-    }
-
-    .project-box {
-        margin-top: 50px;
-        margin-right: 50px;
-    }
-
-    .play-game {
-        margin-left: 50px;
-    }
-
-    .btn-know {
-        margin-top: 10px; 
-    }
-
-    /* blogs.html */
-    
-    .blogs-btn {
-        margin-left: 45px;
-    }
-    
-    .blogs {
-        margin-left: 12px;
+        padding: 30px;
+        text-align:center ;
     }
 
 }
 
-@media only screen and (max-width: 1135px) {
-    
-    body {
-        text-align: center;
-        padding: auto;
-    }
-    .header-block {
-        margin: 100px 30px;
-        display: flex;
-        flex-direction: row;
-    }
-
+@media(max-width:900px) {
     .profile-image {
+        text-align: center;
+        margin: auto;
         float: none;
-        margin: 30px;
-    }
-
-    .parent {
-        margin: 20px;
-        flex-wrap: wrap;
-    }
-
-    .blocks {
-        margin: 50px 30px; 
-    }
-    .blogs {
-        padding-bottom: 4%;
+        padding: 30px;
     }
 
     .myInfo-block {
-        padding:30px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .project-parent{
+        text-align: center;
+        margin: auto;
+    }
+    .project-box{
+        text-align: center;
     }
 
+    .myprojects-btn {
+        margin: auto;
+    }
+
+    .play{
+        margin: 5px auto;
+    }
 }
