@@ -292,8 +292,10 @@ footer a {
         margin: auto;
         font-size: 30px;
     }
+    
     .nav-icons {
         text-align: center;
+        padding-inline-start: 0px;
     }
     .nav-link {
         display: block;
@@ -335,6 +337,10 @@ footer a {
     }
     .project-box{
         text-align: center;
+    }
+
+    ol {
+        padding-inline-start: 0;
     }
 
     .myprojects-btn {
